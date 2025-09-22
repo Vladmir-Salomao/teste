@@ -10,6 +10,8 @@
             justify-content: center;
             align-items: center;
             height: 100vw;
+            flex-direction: column;
+            gap: 2rem;
         }
         table,td,th,tr{
             border: 2px solid;
@@ -17,10 +19,43 @@
             text-align: center;
             padding: 1rem;
         }
+        table{
+            display: block;
+        }
+        .a{
+            background-color: red;
+        }
+        
+        .b{
+            background-color: blue;
+        }
+        .c{
+            color: white;
+            height: 50px;
+            width: 200px;
+            text-align: center;
+            align-items: center;
+            border: 1px solid ;
+            transition: 0.5s ease;
+        }
+        .c:hover{
+            background-color: black;
+            color: white;
+        }
+        .d{
+            display: flex;
+
+        }
+
     </style>
 </head>
 <body>
-    <table>
+    <div class="d">
+        <div class="a c"><p>bem</p></div>
+    <div class="b c"><p>mal</p></div>
+    </div>
+    <div class="e">
+        <table>
         <thead>
             <th>vladmir</th>
             <th>dos santos</th>
@@ -40,5 +75,6 @@
 
         </tbody>
     </table>
+    </div>
 </body>
 </html>
